@@ -1,0 +1,369 @@
+@import url(reset.css);
+@import url(ramka.css);
+@import url(media.css);
+
+html{
+    font-family: 'Playfair Display', serif;
+    background: var(--green) url(assets/tlo.svg) fixed no-repeat;
+    background-size: contain;
+    font-size: 62.5%;
+    color: #48504e;
+}
+
+.green { color: var(--green); }
+.grey { color: var(--gray); }
+.lightgrey { color: var(--light); }
+
+
+/*Articles*/
+hgroup h1 {
+    font-size: 4rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 3.5rem;
+    margin:4rem;
+    /*display: inline-block;*/
+    border-top-left-radius: 2.0rem;
+}
+hgroup h1>span{
+   font-weight: bold;
+}
+
+article h2 { font-size: 2.7rem; }
+hgroup h3 { font-size: 3.1rem;
+    position: absolute;
+    right:0;
+    bottom: 5%;
+}
+
+article h2, hgroup h3 {
+    color: #ffffff;
+    background-color: var(--gray);
+    padding: 1.5rem;
+    display: inline-block;
+}
+
+article p { font-size: 1.8rem; line-height: 1.55;}
+
+footer p {
+    font-size: 1.4rem;
+    color: var(--gray);
+}
+
+.summary {
+    font-size: 2.4rem;
+    font-style: italic;
+}
+
+.dot{
+    width: 1rem;
+    height: 1rem;
+    background-color:var(--gray);
+    border-radius:1rem;
+    margin: 3rem auto;
+}
+
+.button-more {
+    display: inline-block;
+    border:1px dashed var(--gray);
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    font-size: 3rem;
+    color: var(--gray); ;
+    position: absolute;
+    right:0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #ffffff;
+    z-index: 10;
+}
+
+section {
+    width: 50%;
+    min-width: 600px;
+    max-width: 850px;
+    position: absolute;
+    right: 5%;
+}
+
+article { margin-bottom: 6rem; }
+
+hgroup{
+    margin-left: -25%;
+    position:relative;
+    display: inline-block;
+}
+
+article .text {
+    padding:4rem 0;
+    column-count: 2;
+}
+
+figure{
+    margin-left: -28%;
+    margin-top: 5%;
+    position: absolute;
+}
+
+
+
+/*Tood list*/
+
+.todo{
+    width: 100%;
+    margin-left: -20rem;
+    margin-bottom: 20rem;
+    /*display: inline-block;*/
+    /*border:1px solid blue;*/
+    /*border-radius: 0.5rem;*/
+    border-top-left-radius: 2.0rem;
+    background: #ffffff;
+    box-shadow: 4px 4px 5px rgba(82, 82, 82, .4);
+    text-align: center;
+    /*margin-left: -30rem;*/
+}
+
+.headerTodo{
+    /*border-radius: 5px 5px 0 0;*/
+    border-top-left-radius: 2.0rem;
+    padding: 4rem;
+    background-color: var(--gray);
+    /*background-image: linear-gradient(340deg, #D3F4B0 0%, #637353 100%);*/
+    /*background-image: linear-gradient(340deg, #045de9 0%, #09c6f9 100%);*/
+}
+
+.todo h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 3.5rem;
+}
+
+.todoInput {
+    width: 70%;
+    padding: 1rem 2rem;
+    margin-right: 2rem;
+    border:none;
+    /*border-top-left-radius: 0.5rem;*/
+    /*border-radius: 0.5rem;*/
+    color: var(--gray);
+    background-color: #ffffff;
+}
+
+button {
+    padding: 1rem 2.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: var(--green);
+    cursor: pointer;
+    transition: color .3s, background-color .3s;
+}
+
+button:hover {
+    color: var(--gray);
+    background-color: #AEF266;
+}
+
+.todoList {
+    border:2rem solid var(--gray);
+    padding: 2rem 0;
+    background-color: var(--light);
+}
+.todoList h3 {
+    /*margin-top: 2rem;*/
+    font-size: 2rem;
+    color: var(--gray)
+}
+.alertInfo {
+    margin:2rem;
+    color: var(--green);
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.todoList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    font-size: 1.5rem;
+    background-color: #ffffff;
+    list-style: none;
+    color: var(--gray);
+}
+
+.tools {
+    display: inline-block;
+}
+
+.tools button {
+    margin-right: 0.2rem;
+    padding: 1rem 2.2rem;
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.tools button:hover{
+    background-color: var(--green);
+    /*border-radius: unset;*/
+}
+
+.delete {
+    color: var(--pink1);
+}
+
+.complete {
+    color: var(--green);
+}
+
+.tools .completed:hover{
+    color: var(--gray);
+}
+
+.edit {
+    color:var(--blue);
+    font-weight: bold;
+}
+
+.completed{
+    font-size: 1rem;
+    color: var(--gray);
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+/*popup - task edition*/
+
+.popup {
+    /*border:1px solid black;*/
+    display:none;
+    /*width: 91%;*/
+    /*margin-left: -30rem;*/
+    padding: 3.8rem;
+    background-color: var(--gray);
+}
+
+.popupInfo{
+    margin:2rem;
+    color: var(--green);
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.popupBody {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.popup h3 {
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.popupInput {
+    width: 80%;
+    text-align: left;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border: none;
+    color: var(--gray);
+    background-color: #ffffff;
+}
+
+.popupBtn {
+    margin: 2rem;
+}
+
+
+@media all and (max-width: 1280px){
+    html{
+        background: #6f9a41;
+    }
+    .bg {
+        background: url(assets/bg.jpg) fixed no-repeat 30% 59%;
+        height: 250px;
+    }
+    figure{
+        margin-left: -30%;
+        margin-top: 0;
+    }
+    section {
+        width: 70%;
+    }
+    .todoInput {
+        width: 60%;
+    }
+    .todo {
+        margin-left: -10rem;
+    }
+}
+
+@media all and (max-width: 768px){
+    hgroup, .todo {
+        margin-left: 0;
+    }
+
+    figure{
+        display: none;
+    }
+    footer {
+        background: white;
+        right: 0;
+        text-align: center;
+    }
+    section {
+        width: 90%;
+        min-width: 300px;
+        right: 5%;
+    }
+    article .text {
+        column-count: 1;
+    }
+    .todoInput {
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media all and (max-width: 425px){
+
+    .bg {
+        width: 100%;
+        background-position: 34% 59%;
+        height: 180px;
+    }
+    article h1{
+        font-size: 2rem;
+        margin: 2rem;
+    }
+    .summary{
+        padding: 0 3rem;
+        font-size:2rem;
+    }
+    p.text{
+        padding: 3rem;
+        font-size: 1.6rem;
+    }
+    .todoInput {
+        width: 90%;
+    }
+    hgroup {
+        margin-top: 20rem;
+    }
+    .tools button {
+        padding: 0.8rem;
+    }
+}
+
+
+
+

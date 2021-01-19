@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Make a todo list">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-a11y="true"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Todo list.</title>
+</head>
+<body>
+
+    <header class="dropdown-content">
+
+    </header>
+
+    <div class="bg"></div>
+
+    <section>
+        <article>
+            <hgroup>
+                <h1><span class="green">ToDo lists </span> - czy opłaca się z nich korzystać? </h1>
+                <h3>💚</h3>
+            </hgroup>
+            <p class="summary">
+               Spróbuj przypomnieć sobie ile razy zapomniałeś zrobić coś ważnego.
+               Nierzadko było zapewne i tak, że zawsze pozostało coś odłożone na później.
+               Nadmiar zadań powoduje, że musimy posiłkować się zewnętrznymi mózgami, ale czy wiesz jak to robić właściwie?
+            </p>
+            <div class="dot"></div>
+            <h2> Czy znalałeś już swoją wymarzoną aplikację listy ToDo? </h2>
+            <figure>
+                <img src="assets/head.svg" width="130">
+            </figure>
+            <p class="text">
+                ToDo list, czyli lsty rzeczy do zrobienia to świetny sposób na śledzenie zaległych zadań. Choć nie wydaje się to skomplikowaną praktyką - zapisywanie kilku rzeczy, które chcesz zrobić każdego dnia - może okazać się wyzwaniem.
+                Dla wielu z nas listy rzeczy do zrobienia są jak kajdany. Czynią nas nieszczęśliwymi i wysysają naszą energię, zamiast motywować nas do zrobienia więcej.
+                Jednak jest bardzo proste rozwiązanie: przeformułowanie listy tak, aby skupiała się na większym celu w pracy. Jeśli połączysz zadania z listy zadań z większym celem, będą one mniej nudne i banalne, a ważniejsze i bardziej motywujące.
+                Rozważ dodanie zdania do każdego zadania na liście rzeczy do zrobienia, które wyjaśnia wartość wykonania tego zadania. Jeśli potrafisz jasno zdefiniować, dlaczego należy wykonać zadanie, poczujesz większą motywację do jego wykonania.
+            </p>
+            <h2> Jeśli nie, to może spodoba Ci się moja poniższa wersja!</h2>
+            <a class="button-more" href="#"> > </a>
+        </article>
+
+
+            <div class="todo">
+                <div class="headerTodo">
+                    <h1>ToDo Lista </h1>
+                    <input type="text" class="todoInput" placeholder="Wpisz treść zadania...">
+                    <button class="addBtn">Dodaj</button>
+                </div>
+                <div class="todoList">
+                    <h3>Lista zadań:</h3>
+                    <p class="alertInfo"></p>
+                    <ul>
+                        <li id="test">Wypić kawę <div class="tools">
+                                <button class="complete"><i class="fas fa-check"></i>
+                                </button><button class="edit">EDIT
+                                </button><button class="delete"><i class="fas fa-times"></i></button>
+                            </div>
+                        </li>
+                        <li id="test2">Zjeść śniadanie <div class="tools">
+                                <button class="complete"><i class="fas fa-check"></i>
+                                </button><button class="edit">EDIT
+                                </button><button class="delete"><i class="fas fa-times"></i></button>
+                            </div>
+                        </li>
+                        <li id="test3">Umyć okna <div class="tools">
+                                <button class="complete"><i class="fas fa-check"></i>
+                                </button><button class="edit">EDIT
+                                </button><button class="delete"><i class="fas fa-times"></i></button>
+                            </div>
+                        </li>
+                  </ul>
+                </div>
+                <div class="popup">
+                    <h3>Edytuj zadanie:</h3>
+                    <p class="popupInfo"></p>
+                    <div class="popupBody">
+
+                        <input type="text" class="popupInput" placeholder="Wprowadź nową treść zadania...">
+                        <button class="popupBtn accept">Zatwierdź</button>
+                        <button class="popupBtn cancel">Anuluj</button>
+                    </div>
+                </div>
+            </div>
+        <footer>
+            <p>copyright &copy; 2021 JFigula</p>
+        </footer>
+    </section>
+
+</body>
+<script src="main.js"></script>
+</html>

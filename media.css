@@ -1,0 +1,58 @@
+@media all and (max-width: 1280px){
+    html{
+        background: #6f9a41;
+    }
+    .bg {
+        background: url(assets/bg.jpg) fixed no-repeat 30% 59%;
+        height: 250px;
+    }
+    figure{
+        margin-left: -30%;
+        margin-top: 0;
+    }
+    section {
+        width: 70%;
+    }
+}
+
+@media all and (max-width: 768px){
+    hgroup{
+        margin-left: 0;
+    }
+    figure{
+        display: none;
+    }
+    footer {
+        background: white;
+        right: 0;
+        text-align: center;
+    }
+    section {
+        width: 90%;
+        min-width: 300px;
+        right: 5%;
+    }
+    .text {
+        column-count: 1;
+    }
+}
+
+@media all and (max-width: 425px){
+    h1{
+        font-size: 3rem;
+        margin: 2rem;
+    }
+    .bg {
+        width: 100%;
+        background-position: 34% 59%;
+        height: 180px;
+    }
+    .summary{
+        padding: 0 3rem;
+        font-size:2rem;
+    }
+    p.text{
+        padding: 3rem;
+        font-size: 1.6rem;
+    }
+}
